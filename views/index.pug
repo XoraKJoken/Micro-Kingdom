@@ -1,0 +1,34 @@
+extends layout
+
+block content
+    main.inner.cover(role='main')
+      h1.cover-heading Welcome
+      |
+      p.h3.mb-3.font-weight-normal
+        | It's wonderful to make your acquaintance!
+        br
+        | Are you ready to start your own kingdom?
+      | &#x9;&#x9;
+      p.lead
+        | We specialize in finding Kingdoms matched to any level of wealth!
+        br
+        | Please enter our shop and we will find the perfect Kingdom for you!
+      | &#x9;&#x9;
+      p.text-muted Where are my manners?! First, what is your name?
+      | &#x9;&#x9;
+      form.form-signin
+        .form-label-group
+          input#nameBox.form-control(type='name', placeholder='Name' name='username' required autofocus)
+          | &#x9;&#x9;&#x9;
+          label(for='inputEmail') Your Name
+        | &#x9;&#x9;
+        button#submit.btn.btn-lg.btn-primary.btn-block(type='submit', onclick="putCookie(document.getElementsByTagName('form'));") Enter
+    |
+    footer.mastfoot.mt-auto
+      .inner
+        p Micro-Kingdoms made by Antonio B
+
+block scripts
+  script(type='text/javascript', src='/javascripts/jquery-3.3.1.slim.min.js')
+  script(type='text/javascript', src='/javascripts/popper.min.js')
+  script(type='text/javascript', src='/javascripts/bootstrap.min.js')

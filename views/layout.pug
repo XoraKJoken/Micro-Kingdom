@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    |
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    |
+    meta(name='description', content='Micro-Kingdoms')
+    |
+    meta(name='author', content='Abaccus')
+    |
+    |
+    title Micro-Kingdoms
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+|
+|
+body.text-center
+  .cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column
+    header.masthead.mb-auto
+      .inner
+        h3.masthead-brand=title
+        |
+        nav.nav.nav-masthead.justify-content-center
+          a.nav-link.active(href='#') Home
+    | &#x9;
+    | &#x9;
+    block content
+
+    block scripts
